@@ -24,7 +24,7 @@ I'm not from Cylance, this code is **NOT** validated or approved by Cylance.
 ![Telecylance Result](/images/result.png)
 - Waive threat per device directly from Telegram interface.
 ![Telecylance Result](/images/waive.png)
-- You can check on Virustotal if the threat is known
+- You can check on Virustotal if the threat is known.
 ![Telecylance Result](/images/virus_total.png)
 
 ## Requirements:
@@ -72,4 +72,4 @@ Keep in mind that the waive action is logged in the Log of Venue but without IP 
 ## Support
 
 Feel free to contact me for any questions.
-Thanks 
+Thanks
