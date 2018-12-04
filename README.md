@@ -68,3 +68,8 @@ Then you have to set a timer time expressed in seconds. This is the amount of ti
 Every 30 seconds Telecylance will ask to different tenants for new threats and, if a new threat is catch in the last 5 minutes Telecylance will notify the threat found only ONCE.
 
 Keep in mind that the waive action is logged in the Log of Venue but without IP or name.
+
+## Support
+
+Feel free to contact me for any questions.
+Thanks 
