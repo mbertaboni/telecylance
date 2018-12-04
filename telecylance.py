@@ -170,14 +170,10 @@ def call_handler(bot, update):
         tid_val = tid_val_raw.group(1).strip()
         threat_id = threat_sha.group(1).strip()
         device_id = device_id_raw.group(1).strip()
-        print tid_val
-        print device_id
-        # ho bisogno di leggere da che tenant arriva sta cosa
         db = sqlite3.connect('telecylance.db')
         cur = db.cursor()
         cur.execute("SELECT * from conf WHERE ten_id=?", (tid_val,))
         rows = cur.fetchall()
-        print rows
         for tenant in rows:
             app_id = tenant[1]
             app_secret = tenant[2]
@@ -231,14 +227,12 @@ def get_threats(bot, job):
         "SELECT * FROM conf where ok=1")
     rows = cur.fetchall()
     for tenant in rows:
-        print tenant
         tid_val = tenant[0]
         app_id = tenant[1]
         app_secret = tenant[2]
         tenant_name = tenant[5]
         access_token = get_token(app_id, tid_val, app_secret)
         if setup_is_ok():
-            print "ok"
             tot = 0
             detail_request = requests.get(
                 build_url('threats', 1, 200), headers=headers_request)
@@ -246,7 +240,6 @@ def get_threats(bot, job):
             total_pages = int(number_elements['total_pages'])
             total_pages = total_pages + 1
             # total_number_of_items = number_elements['total_number_of_items']
-            print "\n\r"
             for page in range(1, total_pages):
                 threats = requests.get(build_url('threats', int(page), 200),
                                        headers=headers_request)
@@ -275,7 +268,6 @@ def get_threats(bot, job):
                     #print "Last Found" + lastfound_zone_string
                     #print "Startdate" + startdate
                     if lastfound_zone > startdate_obj:
-                        print "Trovata Roba"
                         unique_threat = str(threat['sha256'])
                         db = sqlite3.connect('telecylance.db')
                         cur = db.cursor()
