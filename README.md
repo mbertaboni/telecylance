@@ -1,3 +1,4 @@
+![Telecylance Logo](/images/telecylance.png)
 # Telecylance
 
 Another use of the Cylance API with a reckless use of Python.
@@ -42,6 +43,8 @@ Once the bot is started you can configure it this way
     /setup XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ -euc1 Tenant_friendly_name
 
 if you need to setup other tenants you can call /setup and follow the interactive setup
+
+![Image of setup](https://octodex.github.com/images/yaktocat.png)
 Then you have to set a timer time expressed in seconds. This is the amount of time that Telecylance will use between requests to Venue for new threats.
 
     /set 30
