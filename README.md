@@ -60,6 +60,7 @@ Once the bot is started you can configure it this way
 if you need to setup other tenants you can call /setup and follow the interactive setup
 
 ![Telecylance Logo](/images/setup.png)
+
 Then you have to set a timer time expressed in seconds. This is the amount of time that Telecylance will use between requests to Venue for new threats.
 
     /set 30
