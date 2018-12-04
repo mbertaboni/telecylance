@@ -57,6 +57,7 @@ Once the bot is started you can configure it this way
 
     /setup XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ -euc1 Tenant_friendly_name
 
+Where Xs stands for tenantID, Ys stands for appID and Zs stands for appSecret.
 if you need to setup other tenants you can call /setup and follow the interactive setup
 
 ![Telecylance Logo](/images/setup.png)
