@@ -18,7 +18,7 @@ I'm not from Cylance, this code is **NOT** validated or approved by Cylance.
 - Waive threat per device directly from Telegram interface.
 ![Telecylance Result](/images/waive.png)
 - You can check on Virustotal if the threat is known
-![Telecylance Result](/images/virustotal.png)
+![Telecylance Result](/images/virus_total.png)
 
 ## Requirements:
 
