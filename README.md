@@ -13,9 +13,12 @@ I'm not from Cylance, this code is **NOT** validated or approved by Cylance.
 
 ## Specs
 - Multi-tenant Support ( only per-region at the moment )
-- Waive threat per device directly from Telegram interface.
 - You can run a Telegram bot that send you notification whenever a threat in Venue is found.
+![Telecylance Result](/images/result.png)
+- Waive threat per device directly from Telegram interface.
+![Telecylance Result](/images/waive.png)
 - You can check on Virustotal if the threat is known
+![Telecylance Result](/images/virustotal.png)
 
 ## Requirements:
 
