@@ -11,17 +11,18 @@ This software is **NOT** provided or written by Cylance.
 I'm not from Cylance, this code is **NOT** validated or approved by Cylance.
 
 ## Specs
-- Multitenant Support ( only per-region at the moment )
+- Multi-tenant Support ( only per-region at the moment )
 - Waive threat per device directly from Telegram interface.
 - You can run a Telegram bot that send you notification whenever a threat in Venue is found.
+- You can check on Virustotal if the threat is known
 
 ## Requirements:
 
-jwt, requests, python 2.7,sqlite3, python-telegram-bot
+jwt, requests, python 2.7, sqlite3, python-telegram-bot
 
 ## Limitations:
 
-- DB everything is in cleartext, yes I know that this is very ugly, but keep in mind that this is not intended for production use, so it's important
+- DB everything is in cleartext, yes I know that this is very ugly, but keep in mind that this is not intended for production use. I will fix asap.
 - Support only for -euc1 tenants, otherwise you have to modify the prefix variable at line 45, but you can't mix tenants with different regions
 - A lot, no proxy support
 - Probably a plenty of bugs
