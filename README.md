@@ -2,13 +2,20 @@
 # Telecylance
 
 Another use of the Cylance API with a reckless use of Python.
+
 Telecylance is a Telegram bot that uses Venue's API to read and notify for new threats.
-You can configure it interactely using telegram and a simple sqlite db.
-This is a beta version, because I'm very unfamiliar with python and even with telegram's bot.
-Anyway, I think there is space to make it better.
+
+You can configure it interactely using Telegram and a simple sqlite db.
+
+This is a **beta** version, because I'm very unfamiliar with python and even with Telegram's bots.
+
+So this is **not** intended for production use
+
+Anyway, the concept seems to work and I think there is a lot of space to make it better.
 
 ## Disclaimer
 This software is **NOT** provided or written by Cylance.
+
 I'm not from Cylance, this code is **NOT** validated or approved by Cylance.
 
 ## Specs
@@ -33,10 +40,15 @@ jwt, requests, python 2.7, sqlite3, python-telegram-bot
 
 ## Setup:
 First you need the tab integration in Venue and setup the API. You need the tenant id, app id and app secret.
+
 The application need the modify permission for threats.
+
 Then you need a token for Telegram, so ask to Botfather https://telegram.me/botfather for a /newbot.
+
 Choose a serious name and botfather will give you a unique Token. Otherwise in /mybots you can ask for the token.
+
 Insert the Token at the line 44 of telecylance.py.
+
 Switch to Telegram and setup everything using command /setup
 
 ## HowTo
@@ -53,4 +65,5 @@ Then you have to set a timer time expressed in seconds. This is the amount of ti
     /set 30
 
 Every 30 seconds Telecylance will ask to different tenants for new threats and, if a new threat is catch in the last 5 minutes Telecylance will notify the threat found only ONCE.
+
 Keep in mind that the waive action is logged in the Log of Venue but without IP or name.
