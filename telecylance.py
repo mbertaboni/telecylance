@@ -317,7 +317,7 @@ def get_threats(bot, job):
                                 # cosi' non esco piu' con un secondo messaggio
                                 conn = sqlite3.connect('telecylance.db')
                                 conn.execute(
-                                    "INSERT INTO temp_data (threat_id,timestamp,tenant_id) VALUES (?,?,?)", (unique_threat, unique_date, tid_val))
+                                    "INSERT OR IGNORE INTO temp_data (threat_id,timestamp,tenant_id) VALUES (?,CURRENT_TIMESTAMP,?)", (unique_threat, tid_val))
                                 conn.commit()
                                 bot.sendMessage(job.context, text=message_telegram,
                                                 parse_mode='HTML', disable_web_page_preview=1, reply_markup=reply_markup)
